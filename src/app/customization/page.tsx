@@ -365,11 +365,15 @@ export default function CustomizationPage() {
           {/* Preview content */}
           <div className="flex-1 bg-[var(--background)] p-4">
             <div
-              className={`h-full flex items-center justify-center text-[var(--foreground-muted)] transition-opacity duration-300 ${
+              className={`h-full w-full transition-opacity duration-300 ${
                 isPreviewLoading ? "opacity-50" : "opacity-100"
               }`}
             >
-              Resale marketplace preview will appear here
+              <iframe
+                src="https://minikid.reluved.com/en"
+                className="w-full h-full rounded-lg border border-[var(--border)]"
+                style={{ minHeight: "600px" }}
+              />
             </div>
           </div>
         </div>

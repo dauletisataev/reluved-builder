@@ -81,12 +81,7 @@ export default function Home() {
       </main>
 
       {/* Loading Modal */}
-      {isLoading && (
-        <LoadingModal
-          websiteUrl={websiteUrl}
-          onComplete={handleAnalysisComplete}
-        />
-      )}
+      {isLoading && <LoadingModal onComplete={handleAnalysisComplete} />}
     </div>
   );
 }

@@ -1,0 +1,39 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+ # Reluved.io - Brand Resale Platform
+
+## Project Overview
+Reluved.com enables brands to launch their own resale services within minutes by integrating with their existing e-commerce infrastructure. The platform streamlines the process of setting up a resale marketplace, allowing brands to offer sustainable shopping options to their customers while generating additional revenue streams.
+
+## Core Features
+- **One-click brand integration**: Brands simply paste their website URL, and our system analyzes it to extract necessary information
+- **Step-by-step setup process**: Guided workflow with clear progress indicators
+- **API integrations**: Connects with coupon generation and order history APIs
+- **Customizable resale storefronts**: Preview and customize the resale landing page during setup
+- **Seller management**: Tools for managing seller accounts and listings
+
+## User Flow
+1. **Brand URL Entry**: Brand representatives enter their website URL
+2. **Website Analysis**: Our system extracts brand identity, color schemes, and product categories
+3. **API Configuration**: Setup connections for coupon generation and order history
+4. **Customization**: Preview and modify the resale store's appearance
+5. **Launch**: Activate the resale platform with a single click
+
+## Technical Architecture
+- **Frontend**: React-based SPA with a clean, modern interface
+- **Backend**: Node.js API service for website analysis and integration
+- **Integration Layer**: API connectors for various e-commerce platforms
+- **Preview Engine**: Real-time storefront preview during configuration
+
+## Development Priorities
+1. Initial landing page with URL entry
+2. Step-by-step configuration interface with vertical progress indicator
+3. Basic preview functionality (placeholder for now)
+4. API integration framework
+5. Launch functionality
+
+## Project Status
+Early development phase - building core interface and integration framework.

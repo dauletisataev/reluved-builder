@@ -1,18 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { IconHeartFilled } from "@tabler/icons-react";
 import { Header } from "./components/header/Header";
 import { PlatformBenefits } from "./components/benefits/PlatformBenefits";
 import { LoadingModal } from "./components/loading/LoadingModal";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [websiteUrl, setWebsiteUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-
+  const router = useRouter();
   const handleLaunch = () => {
     if (websiteUrl) {
       setIsLoading(true);
@@ -27,7 +26,8 @@ export default function Home() {
     setTimeout(() => {
       setIsComplete(false);
       setWebsiteUrl("");
-    }, 2000);
+      router.push("/customization");
+    }, 3000);
   };
 
   return (

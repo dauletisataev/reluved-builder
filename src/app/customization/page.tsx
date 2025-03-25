@@ -109,20 +109,6 @@ export default function CustomizationPage() {
     );
   };
 
-  // Check if current step is valid
-  const isCurrentStepValid = () => {
-    switch (activeStep.id) {
-      case "platform-name":
-        return formValues.platformName.length >= 3;
-      case "orders-integration":
-        return formValues.ordersApiEndpoint && formValues.ordersApiKey;
-      case "coupon-api":
-        return formValues.couponApiEndpoint && formValues.couponApiKey;
-      default:
-        return false;
-    }
-  };
-
   // Handle copy URL
   const handleCopyUrl = async () => {
     try {
